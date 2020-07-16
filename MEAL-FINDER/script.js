@@ -21,7 +21,7 @@ function searchMeal(e) {
       .then(res => res.json())
       .then(data => {
         console.log(data);
-        resultHeading.innerHTML = `<h2>Search results for '${term}':</h2>`;
+        resultHeading.innerHTML = `<h2 class="results">Search results for '${term}':</h2>`;
 
         if (data.meals === null) {
           resultHeading.innerHTML = `<p>There are no search results. Try again!<p>`;
@@ -97,8 +97,8 @@ function addMealToDOM(meal) {
       </div>
       <div class="main">
         <p>${meal.strInstructions}</p>
-        <h2>Ingredients</h2>
-        <ul>
+        <h2 class="ingredients">Ingredients</h2>
+        <ul class="ingredient-tabs">
           ${ingredients.map(ing => `<li>${ing}</li>`).join('')}
         </ul>
       </div>

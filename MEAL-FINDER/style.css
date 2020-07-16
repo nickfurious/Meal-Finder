@@ -125,7 +125,7 @@ input[type='text'] {
 .single-meal ul li {
   border: 1px solid #ededed;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #e09850;
   display: inline-block;
   color: black;
   font-size: 12px;
@@ -171,6 +171,14 @@ input[type='text'] {
 }
 
 h1 {
+  font-family: HeavyMetalBlight;
+}
+
+.ingredients {
+  font-family: HeavyMetalBlight;
+}
+
+.results {
   font-family: HeavyMetalBlight;
 }
 
