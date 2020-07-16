@@ -188,3 +188,44 @@ h1 {
   font-style: normal;
   font-weight: 900;
 }
+
+#social-media {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+}
+
+.icon {
+  color: #fff;
+  padding: 20px;
+  animation: icon3d 200ms infinite;
+}
+
+.icon:hover {
+  animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px #e09850, -5px -6px #474e54;
+  }
+
+  25% {
+    text-shadow: -5px -6px #e09850, 5px 4px #474e54;
+  }
+
+  50% {
+    text-shadow: 5px -4px #e09850, -8px 4px #474e54;
+  }
+
+  75% {
+    text-shadow: -8px -4px #e09850, -8px 4px #474e54;
+  }
+
+  100% {
+    text-shadow: -5px 0px #e09850, 5px -4px #474e54;
+  }
+}
